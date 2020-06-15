@@ -1,0 +1,24 @@
+终于考完数学了 year 2 ends
+MATLAB 竟然可以实现多种数学操作 考试时还是占了便宜
+
+1.向量微积分 vector calculus
+求解散度和旋度：
+syms x y z
+fun = [sin(y)-cos(z), (2*x+cos(z))*cos(y), (x-sin(y))*(cos(z))]
+curl(fun, [x y z])
+divergence(fun, [x y z])
+还可以求向量的斜率:
+gradient(fun, [x y z])
+MATLAB立天功
+
+求解Hessian 从而求得二次导数：
+syms x1 x2 x3
+f = x1^2 - 3*x2^2 + 2*x3^2 + 3*x1 + 2*x3 + 7;
+H = hessian(f,[x1,x2,x3])
+
+2.统计 applied statistics
+高中a-levle水平
+
+3.Linear system & Partial differential equations:
+新知识 | 有点难
+
